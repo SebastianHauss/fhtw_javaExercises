@@ -3,9 +3,9 @@ package fhtw.javaExercises.lesson5_03042025;
 import java.util.Scanner;
 
 public class Getrimmtesmittel {
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         double[] betraege = new double[10];
 
         eingabe(betraege);
@@ -41,7 +41,6 @@ public class Getrimmtesmittel {
     }
 
     public static void eingabe(double[] betraege) {
-        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < betraege.length; i++) {
             System.out.printf("Zahl %d: ", (i + 1));
             betraege[i] = sc.nextDouble();
